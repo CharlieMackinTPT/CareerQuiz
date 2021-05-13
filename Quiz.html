@@ -11,7 +11,15 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Quiz" startnode="1" creator="Twine" creator-version="2.3.5" ifid="C25AF8E6-8E00-4ED2-82B1-EE729AF52C48" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="1" tags="" position="198,298" size="100,100">(set: $People to 0)
+<tw-storydata name="Quiz" startnode="1" creator="Twine" creator-version="2.3.5" ifid="C25AF8E6-8E00-4ED2-82B1-EE729AF52C48" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R2FTJHMQZ1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7FTD3JTLDL');
+</script></script><tw-passagedata pid="1" name="1" tags="" position="198,298" size="100,100">(set: $People to 0)
 (set: $Things to 0)
 (set: $Data to 0)
 (set: $Ideas to 0)
@@ -27,7 +35,38 @@ Pick the image that looks like the most fun to you.
 
 &lt;td&gt;(link: &#39;&lt;img src=&quot;images/Things2.png&quot;&gt;&#39;)[(set: $Things to $Things +1)(goto:&quot;2&quot;)]&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/table&gt; </tw-passagedata><tw-passagedata pid="2" name="2" tags="" position="398,298" size="100,100">Pick the image that looks like the most fun to you.2
+&lt;/table&gt; 
+
+&lt;script&gt;
+var analyticsObj = {
+      &#39;event_name&#39;: &#39;Avatar Quiz&#39;,
+      &#39;category&#39;: &#39;Game&#39;,
+      &#39;action&#39;: &#39;start_game&#39;,
+      &#39;label&#39;: &#39;Avatar Quiz&#39;,
+      &#39;level&#39;: 1,
+      &#39;stage&#39;: 1,
+      &#39;scene&#39;: 1,
+      &#39;version&#39;: &#39;11XX&#39;,
+      &#39;value&#39;: &quot;&quot;,
+      &#39;timestamp&#39;: Date.now()
+    }
+
+    //Define data to track with Google Analytics
+    gtag(&#39;event&#39;, analyticsObj.event_name, {
+      &#39;name&#39;: analyticsObj.event_name,
+      &#39;category&#39;: analyticsObj.category,
+      &#39;action&#39;: analyticsObj.action,
+      &#39;label&#39;: analyticsObj.label,
+      &#39;level&#39;: analyticsObj.level,
+      &#39;stage&#39;: analyticsObj.stage,
+      &#39;scene&#39;: analyticsObj.scene,
+      &#39;version&#39;: analyticsObj.version,
+      &#39;value&#39;: &#39;&#39;,
+      &#39;timestamp&#39;: analyticsObj.timestamp
+    });
+
+    console.log(&quot;Data tracked by Google Analytics: &quot;, analyticsObj);
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="2" name="2" tags="" position="398,298" size="100,100">Pick the image that looks like the most fun to you.2
 (link: &#39;&lt;img src=&quot;images/Data1.png&quot;&gt;&#39;)[(set: $Data to $Data +1)(goto:&quot;3&quot;)]
 (link: &#39;&lt;img src=&quot;images/Data2.png&quot;&gt;&#39;)[(set: $Data to $Data +1)(goto:&quot;3&quot;)]
 (link: &#39;&lt;img src=&quot;images/Ideas1.png&quot;&gt;&#39;)[(set: $Ideas to $Ideas +1)(goto:&quot;3&quot;)]
