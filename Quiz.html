@@ -11,33 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Quiz" startnode="1" creator="Twine" creator-version="2.3.5" ifid="C25AF8E6-8E00-4ED2-82B1-EE729AF52C48" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">setup.JSLoaded = false;
-var lockID = LoadScreen.lock();  // Lock loading screen
-importScripts("https://www.googletagmanager.com/gtag/js?id=i-have-put-my-ID-here")
-	.then(function() {
-		setup.JSLoaded = true;
-		window.dataLayer = window.dataLayer || [];
-		window.gtag = function (){ dataLayer.push(arguments); };
-		gtag('js', new Date());
-		gtag('config', 'i-have-put-my-ID-here');
-		LoadScreen.unlock(lockID);  // Unlock loading screen
-	}).catch(function(error) {
-		alert("Error: Could not load 'gtag.js'.");
-	});
-
-// Check for anything the user clicks
-document.addEventListener('click', function (event) {
-	// Check if what they clicked is a twine link
-	if (event.target.matches('tw-link')) {
-		// Get the destination of the clicked link
-		var passageName = event.target.getAttribute('passage-name');
-		// Send the message to google analytics
-		gtag('event', 'Navigation', {
-			'event_label': passageName,
-			'event_category': 'GuestClick'
-		});
-	}
-}, false);</script><tw-passagedata pid="1" name="1" tags="nobr" position="198,298" size="100,100">Pick the image that looks like the most fun to you.
+<tw-storydata name="Quiz" startnode="1" creator="Twine" creator-version="2.3.5" ifid="C25AF8E6-8E00-4ED2-82B1-EE729AF52C48" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="1" tags="nobr" position="198,298" size="100,100">Pick the image that looks like the most fun to you.
 &lt;table style=&quot;width:100%&quot;&gt;
 &lt;tr&gt;
 &lt;td&gt;(link: &#39;&lt;img src=&quot;images/People1.png&quot;&gt;&#39;)[(set: $People to $People +1)(goto:&quot;2&quot;)]&lt;/td&gt;
